@@ -95,12 +95,6 @@ public class ClienteView extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
     }
-    
-    public static void main(String[] args) {
-        ClienteView clienteView = new ClienteView();
-        ClienteDAO clienteDAO = new ClienteDAO(ConexaoDAO.obterConexao());
-        ClienteControle clienteControle = new ClienteControle(clienteDAO, clienteView);
-    }
 
 }
 

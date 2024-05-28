@@ -1,12 +1,15 @@
 package Modelo;
 
 public abstract class Produto {
-	protected Integer quantidade;
+	protected Integer idProduto, quantidade;
 	protected String nome, descricao, categoria;
 	protected Double precoCusto, precoVenda;
 	
 	
 
+	public Integer getIdProduto() {
+		return idProduto;
+	}
 	public Integer getQuantidade() {
 		return quantidade;
 	}
